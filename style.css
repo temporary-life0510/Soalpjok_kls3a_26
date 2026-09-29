@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e6f0fa;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-top: 8px solid #0056b3;
+}
+
+h1, h2, h3 {
+    color: #0056b3;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Form Styling */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #b3d7ff;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.input-group input[readonly] {
+    background-color: #f0f4f8;
+    color: #666;
+}
+
+/* Tabel Styling */
+.tabel-container {
+    margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #b3d7ff;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    background-color: #f9fbfd;
+}
+
+tr:nth-child(even) td {
+    background-color: #f0f6fc;
+}
+
+/* Kuis Styling */
+.soal {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.pilihan-wadah {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opsi-btn {
+    background-color: #f0f4f8;
+    color: #333;
+    border: 2px solid #cbd5e1;
+    text-align: left;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.opsi-btn:hover {
+    background-color: #dbeafe;
+}
+
+.opsi-btn.terpilih {
+    background-color: #93c5fd;
+    border-color: #2563eb;
+    font-weight: bold;
+}
